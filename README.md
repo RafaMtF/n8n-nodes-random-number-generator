@@ -19,7 +19,7 @@ Este repositório contém um nó customizado para o n8n que gera números aleat�
 1. Clone o repositório:
 
 ```bash
-   git clone https://github.com/RafaMtF/n8n-nodes-random-number-generato && cd seu-repo
+   git clone https://github.com/RafaMtF/n8n-nodes-random-number-generator && cd n8n-nodes-random-number-generator
 ```
 
 2. Instale as dependências do projeto e faça a build:
