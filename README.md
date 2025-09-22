@@ -30,7 +30,7 @@ Este repositório contém um nó customizado para o n8n que gera números aleat�
 
 3. Construa e suba o container:
 ```bash
-   docker compose up --build
+   docker compose up -d
 ```
 
 4. Abra o editor do n8n. *[link para o painel do n8n](http://localhost:5678)*
