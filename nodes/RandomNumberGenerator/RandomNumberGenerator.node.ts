@@ -19,7 +19,7 @@ export class RandomNumberGenerator implements INodeType {
 		version: 1,
 		description: 'Gera números aleatórios dentro de um intervalo especificado',
 		defaults: {
-			name: 'Random Number Generator',
+			name: 'Gerador de Números Aleatórios',
 		},
 		inputs: ['main'],
 		outputs: ['main'],
