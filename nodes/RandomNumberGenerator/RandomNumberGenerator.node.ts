@@ -12,32 +12,31 @@ const isNumberValue = (v: unknown): v is number => typeof v === 'number' && Numb
 
 export class RandomNumberGenerator implements INodeType {
 	description: INodeTypeDescription = {
-		displayName: 'Gerador de Números Aleatórios',
+		displayName: 'Random',
 		name: 'randomNumberGenerator',
 		icon: { light: 'file:random-dark.svg', dark: 'file:random-light.svg' },
 		group: ['transform'],
 		version: 1,
-		description: 'Gera números aleatórios dentro de um intervalo especificado',
+		description: 'True Random Number Genrator using random.org',
 		defaults: {
-			name: 'Gerador de Números Aleatórios',
+			name: 'Random',
 		},
 		inputs: ['main'],
 		outputs: ['main'],
-        usableAsTool: true,
 		properties: [
 			{
-				displayName: 'Mínimo',
+				displayName: 'Min',
 				name: 'min',
 				type: 'number',
 				default: 1,
-				description: 'Valor mínimo do intervalo (inclusivo)',
+                description: 'Minimum value (inclusive)',
 			},
 			{
-				displayName: 'Máximo',
+				displayName: 'Max',
 				name: 'max',
 				type: 'number',
 				default: 100,
-				description: 'Valor máximo do intervalo (inclusivo)',
+                description: 'Maximum value (inclusive)',
 			},
 		],
 	};
