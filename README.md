@@ -22,28 +22,7 @@ Este repositório contém um nó customizado para o n8n que gera números aleat�
    git clone https://github.com/RafaMtF/n8n-nodes-random-number-generator && cd n8n-nodes-random-number-generator
 ```
 
-2. Instale as dependências do projeto e faça a build:
-
-```
-   npm install
-   npm run build
-```
-
-3. Construa e suba o container:
-
-```
-   docker compose up -d
-```
-
-4. Abra o editor do n8n. _[link para o painel do n8n](http://localhost:5678)_
-
-5. No editor de workflow, adicione um nó de gatilho e procure pelo nó "Random".
-
-6. Adicione o nó ao workflow e clique no botão _"Execute step"_, o número aleatório será mostrado na aba de _Outputs_ na direita.
-
-## 🔧 Configuração do Ambiente
-
-1. Configure as variáveis de ambiente no arquivo `.env`:
+2. Crie o arquivo `.env` e configure as variáveis de ambiente:
 
 ```env
    POSTGRES_USER=adminUser
@@ -51,7 +30,24 @@ Este repositório contém um nó customizado para o n8n que gera números aleat�
    POSTGRES_DB=n8n
 ```
 
-2. O PostgreSQL será configurado automaticamente através do script `init-data.sh` quando o container for iniciado
+3. Instale as dependências do projeto e faça a build:
+
+```
+   npm install
+   npm run build
+```
+
+4. Construa e suba o container:
+
+```
+   docker compose up -d
+```
+
+5. Abra o editor do n8n. _[link para o painel do n8n](http://localhost:5678)_
+
+6. No editor de workflow, adicione um nó de gatilho e procure pelo nó "Random".
+
+7. Adicione o nó ao workflow e clique no botão _"Execute step"_, o número aleatório será mostrado na aba de _Outputs_ na direita.
 
 ## 📂 Estrutura do projeto
 
